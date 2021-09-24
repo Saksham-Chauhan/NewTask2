@@ -1,13 +1,35 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.mail .number{
+    display: inline;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#navbutton{
+  background-color: #662D91;
+  ;
+  color: white;
+}
+.card{
+  width: 18rem;
+}
+.discuss{
+  background-color: #66CCCC;
+}
+.foot{
+  background-color: #C4C4C4;
+}
+@media(max-width:768px){
+  .subproduct{
+    margin-left: 2rem;
+    margin-right: 1rem;
+  }
+  .spone{
+    width: 358px;
+  }
+  #span{
+      display: block;
+  }
 }

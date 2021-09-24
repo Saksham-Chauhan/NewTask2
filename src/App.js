@@ -1,24 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import Top from './Top'
+import '../node_modules/bootstrap/dist/css/bootstrap.rtl.min.css'
+// import '../node_modules/bootstrap/dist/js/bootstrap'
+// C:\Users\Saksham\Desktop\Figma\figmatask\node_modules\bootstrap\dist\js\bootstrap.js
+import {Switch,Route} from 'react-router-dom'
+import Navbar from './Navbar';
+import Header from './Header';
+import Products from './Products';
+import Services from './Services';
+import Portfolio from './Portfolio';
+import Developer from './Developer';
+import Discuss from './Discuss';
+import Footer from './Footer';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+        <Top/>
+        <Navbar/>
+        <Switch>
+          <Route exact path='/' component={Header} />
+          <Route exact path='/Products' component={Products}/>
+          <Route exact path='/About' component={Developer}/>
+          <Route exact path='/Services' component={Services} />
+          <Route exact path='/Portfolio' component={Portfolio}/>
+        </Switch>
+        <Discuss/>
+        <Footer/>
+    </>
   );
 }
 
